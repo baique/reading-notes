@@ -4,6 +4,6 @@
 	"version": "0.1.0",
 	"minAppVersion": "1.5.0",
 	"description": "边读边记：.read 文件即阅读视图，内嵌浏览器读原文，右侧记笔记与问题，AI 后台静默补齐参考答案。",
-	"author": "wangbaique",
+	"author": "baique",
 	"isDesktopOnly": true
 }
