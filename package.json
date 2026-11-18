@@ -1,0 +1,31 @@
+{
+	"name": "reading-notes",
+	"version": "0.1.0",
+	"description": "Obsidian 阅读笔记插件：内嵌浏览器 + 问题清单 + AI 静默参考答案",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production"
+	},
+	"devDependencies": {
+		"@types/node": "^22.15.17",
+		"esbuild": "0.25.5",
+		"obsidian": "latest",
+		"typescript": "^5.8.3"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	},
+	"dependencies": {
+		"@codemirror/commands": "^6.8.1",
+		"@codemirror/lang-markdown": "^6.3.3",
+		"@codemirror/language": "^6.11.0",
+		"@codemirror/state": "^6.5.2",
+		"@codemirror/view": "^6.38.1",
+		"@lezer/highlight": "^1.2.1",
+		"@lezer/markdown": "^1.4.3"
+	}
+}

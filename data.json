@@ -1,0 +1,14 @@
+{
+  "aiEnabled": true,
+  "aiCommand": "pi --no-session -p \"${prompt}\"",
+  "aiTemplate": "阅读这个链接的内容：${link}\n\n我的问题是：${question}\n\n只给结论和依据\n表达风格简练，禁止长篇大论\n需要评判对错时，必须明确给出对或错，错误时立即给出原因，禁止模棱两可",
+  "aiTimeoutMs": 30000,
+  "layout": {
+    "top": 0.28,
+    "questions": 0.4241120215537396
+  },
+  "aiBaseUrl": "https://api.openai.com/v1",
+  "aiKey": "",
+  "aiModel": "gpt-4o-mini",
+  "folder": "103.阅读笔记"
+}
