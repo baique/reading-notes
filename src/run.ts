@@ -2,7 +2,7 @@ import { spawn } from 'child_process';
 import { Platform } from 'obsidian';
 
 export interface CommandConfig {
-	/** 例：pi -n --prompt "${prompt}" */
+	/** 例：pi --no-session -p "${prompt}" */
 	command: string;
 	/** 例：阅读这个链接的内容：${link}，回答我的问题：${question} */
 	template: string;
@@ -19,7 +19,7 @@ export interface PromptVars {
 }
 
 export const DEFAULT_TEMPLATE = '阅读这个链接的内容：${link}\n\n我的问题是：${question}\n\n只给结论和依据，不要客套话。';
-export const DEFAULT_COMMAND = 'pi -n --prompt "${prompt}"';
+export const DEFAULT_COMMAND = 'pi --no-session -p "${prompt}"';
 
 /** 模板里的 ${变量} 替换；未知变量原样留着，方便排查 */
 export function fillTemplate(template: string, vars: Record<string, string>): string {

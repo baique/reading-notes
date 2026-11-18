@@ -85,7 +85,7 @@ styles.css
 默认命令：
 
 ```text
-pi -n --prompt "${prompt}"
+pi --no-session -p "${prompt}"
 ```
 
 外部命令必须包含 `${prompt}`，并将最终解答输出到 stdout。
